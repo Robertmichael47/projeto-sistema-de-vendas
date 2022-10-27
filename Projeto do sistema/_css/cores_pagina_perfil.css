@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+	background: #ffffff50;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+	color: white;
+	padding-top: 20px;
+	padding-left: 8px;
+	border-bottom: solid 1px #480075;
+	background: linear-gradient(120deg, #4b006d, #000000);
+}
+header a{
+	position: absolute;
+	top:10px;
+	right: 25px;
+	font-size: 15px;
+    padding: 10px 10px 10px 10px;
+	background: linear-gradient(120deg, #4b006d, #000000);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+    text-decoration: none;
+	border: solid 2px #000000;
+}
+header a ion-icon {
+	font-size: 20px;
+}
+a#op8:hover{
+	background: #000000;
+}
+div#titulo h3{
+	color: white;
+	padding-left: 80px;
+}
+div#nav{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background: linear-gradient(120deg, #4b006d, #000000);
+}
+div#nav a{
+	color: white;
+	display: block;
+	padding-top: 30px;
+	padding-left: 6px;
+	width: 100%;
+	line-height: 40px;
+	text-decoration: none;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+div#nav p{
+	padding-left: 20px;
+	color: white;
+	padding-top: 70px;
+	font-size: 15px;
+	font-family: 'Times New Roman', Times, serif;
+}
+div#nav a:hover{
+	background: rgb(0, 0, 0);
+}
+div#nav ion-icon{
+	padding-right: 10px;
+}
+label#menu{
+	z-index: 1;
+	position: fixed;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+}
+#check:checked ~ div#nav{
+	left:-150px;
+}
+#check:checked ~ div#nav a span{
+	display: none;
+}
+#check:checked ~ div#nav a{
+	font-size: 25px;
+	margin-left: 155px;
+	width: 40px;
+}
+#check{
+	display: none;
+}
+footer{
+	color: white;
+	font-size: 12px;
+	background: linear-gradient(120deg, #4b006d, #000000);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+	text-align: center;
+    position: absolute;
+    top: 510px;
+}
+
